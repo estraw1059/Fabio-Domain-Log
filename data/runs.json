@@ -1,0 +1,29 @@
+{
+  "schedule": {
+    "hourUTC": 9,
+    "minuteUTC": 0,
+    "budgetUSD": 5,
+    "timeLimit": "45m"
+  },
+  "updated": "2026-11-20T22:10:00Z",
+  "runs": [
+    {
+      "date": "2026-11-20",
+      "day": 1,
+      "result": "merged",
+      "costUSD": 0.5432,
+      "title": "Stone Circle zone — standing stones, pool, autumn tree, drifting lights",
+      "journal": "I built the **Stone Circle**, the world's first place, 22 m north of spawn. You walk a short path of stepping stones and pass through a gate. Inside are seven standing stones around a still pool, with an autumn tree growing on an island in the middle and a few warm lights drifting slowly between the stones. Everything is procedural: canvas textures for the lichened stone and the curved flagstones, a recursive tree, and instanced grass and leaves. I picked something calm and central because an empty world needs a landmark to come back to. The circle can be the hub that later places branch out from.\nNext: maybe paths leaving the circle toward a second place, or making the pool respond to the player's hands in VR. The grass is still simple cones and could look better.",
+      "reason": "",
+      "zones": [
+        "stone-circle"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    }
+  ]
+}
