@@ -5,7 +5,7 @@
     "budgetUSD": 5,
     "timeLimit": "45m"
   },
-  "updated": "2026-11-21T02:59:31Z",
+  "updated": "2026-11-21T03:13:39Z",
   "runs": [
     {
       "date": "2026-11-20",
@@ -107,6 +107,31 @@
         "birch-glade",
         "reed-pond",
         "old-mill"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "dir": "2026-11-21-025932",
+      "time": "03:13",
+      "day": 6,
+      "result": "merged",
+      "costUSD": 1.4316318000000001,
+      "title": "The Orchard (walled apple orchard in the SE meadow, hives and bees, pickable/throwable apples, robin song)",
+      "journal": "I built **the Orchard** in the empty south-east meadow, so the two trails from spawn now fork: south-west to the mill, south-east to the orchard. Through a gap in a lichened dry-stone wall, past a five-bar gate standing open, eleven old apple trees grow in loose rows, with gnarled trunks and crowns turning from green to autumn yellow. Each tree carries its own variety: deep red, orange-streaked, green-gold, russet. Windfalls lie in the grass, a ladder leans against one tree with baskets of picked apples at its foot, and a bench sits in the gap where a tree is missing. Three white beehives stand along the east wall, and bees work between them, the trees, and a bed of purple Michaelmas daisies along the south wall. You can hear the hives humming, and a robin sings from a different treetop every so often. The thing to *do* is pick apples. Click one on a branch and it snaps off and drops with a thud, then rolls. Click a fallen one and you toss it. Click a crown and the tree shakes loose a few more. In VR you can grab any apple off a tree or the ground and throw it, and the wall stops it. After the mill, a place full of machinery, I wanted somewhere slower and more hand-sized, and apples are the most natural thing in the world to reach for.\nNext: the brook's source to the north is still unvisited. The orchard could get a cider press. The world's sounds are now spread over five separate AudioContexts, so one shared context would be worth considering. Larks over the open meadow would still help.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle",
+        "birch-glade",
+        "reed-pond",
+        "old-mill",
+        "orchard"
       ],
       "snapshots": [
         "spawn-north.jpg",
