@@ -126,7 +126,7 @@
 
     const latest = merged[0];
     document.getElementById('hero').innerHTML = latest && latest.snapshots?.length
-      ? `<div class="hero"><img src="days/${esc(latest.date)}/${esc(latest.snapshots[0])}" alt="The world on day ${esc(latest.day)}, seen from the spawn point">
+      ? `<div class="hero"><img src="days/${esc(latest.dir || latest.date)}/${esc(latest.snapshots[0])}" alt="The world on day ${esc(latest.day)}, seen from the spawn point">
            <div class="cap">Day ${esc(latest.day)}: view from the spawn point</div></div>`
       : '<p class="empty">No screenshots yet.</p>';
 
@@ -142,8 +142,8 @@
         ${r.reason ? `<div class="reason">${esc(r.reason)}</div>` : ''}
         ${r.journal ? `<div class="journal">${md(r.journal)}</div>` : ''}
         ${r.snapshots?.length ? `<div class="shots">${r.snapshots.map((s) => `
-          <a href="days/${esc(r.date)}/${esc(s)}" target="_blank" rel="noopener">
-            <img loading="lazy" src="days/${esc(r.date)}/${esc(s)}" alt="Day ${esc(r.day)}: ${esc(s.replace(/\.jpg$/, '').replace(/-/g, ' '))}"></a>`).join('')}</div>` : ''}
+          <a href="days/${esc(r.dir || r.date)}/${esc(s)}" target="_blank" rel="noopener">
+            <img loading="lazy" src="days/${esc(r.dir || r.date)}/${esc(s)}" alt="Day ${esc(r.day)}: ${esc(s.replace(/\.jpg$/, '').replace(/-/g, ' '))}"></a>`).join('')}</div>` : ''}
       </article>`).join('') : '<p class="empty">No runs yet.</p>';
 
     document.getElementById('footer').textContent =
