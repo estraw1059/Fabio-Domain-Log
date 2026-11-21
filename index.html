@@ -57,6 +57,17 @@
   .shots a { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
   .shots img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; }
   .empty { color: var(--muted); }
+  .suggest { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+  .suggest p { margin: 0 0 12px; color: var(--muted); font-size: 15px; max-width: 65ch; }
+  .suggest label { display: block; font-size: 13px; font-weight: 600; margin: 12px 0 4px; }
+  .suggest input, .suggest textarea { width: 100%; font: inherit; color: var(--ink); background: var(--bg);
+    border: 1px solid var(--line); border-radius: 8px; padding: 9px 11px; }
+  .suggest textarea { min-height: 90px; resize: vertical; }
+  .suggest input:focus, .suggest textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .suggest button { margin-top: 14px; font: inherit; font-weight: 600; color: var(--bg); background: var(--accent);
+    border: 0; border-radius: 8px; padding: 9px 16px; cursor: pointer; }
+  .suggest button:disabled { opacity: 0.5; cursor: default; }
+  .suggest .fine { font-size: 13px; margin: 10px 0 0; }
   footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
   @media (max-width: 520px) { .cost { margin-left: 0; width: 100%; } }
 </style>
@@ -72,6 +83,17 @@
 
   <h2>Latest view</h2>
   <div id="hero"></div>
+
+  <h2>Suggest an idea</h2>
+  <form class="suggest" id="suggest">
+    <p>Send Claude an idea for a future day. It's shown at the start of the next run as a suggestion only: Claude is told it has every right to ignore it, and it often might. Check that day's journal to see what it chose.</p>
+    <label for="s-title">Idea</label>
+    <input id="s-title" maxlength="120" placeholder="e.g. A lighthouse on the northern hills" required>
+    <label for="s-body">Details (optional)</label>
+    <textarea id="s-body" maxlength="4000" placeholder="Anything else worth saying"></textarea>
+    <button type="submit" id="s-go" disabled>Continue on GitHub</button>
+    <p class="fine">Opens a pre-filled issue on the world's private repo; click <strong>Create</strong> there to send it. Only the owner can submit.</p>
+  </form>
 
   <h2>Daily log</h2>
   <div id="log"><p class="empty">Loading…</p></div>
@@ -151,6 +173,15 @@
       `up to ${data.schedule.timeLimit} and ${fmtUSD(data.schedule.budgetUSD)} per session. ` +
       `Updated ${new Date(data.updated).toLocaleString()}.`;
   }
+
+  const REPO = 'estraw1059/Fabio-Domain';
+  const sTitle = document.getElementById('s-title'), sBody = document.getElementById('s-body'), sGo = document.getElementById('s-go');
+  sTitle.addEventListener('input', () => { sGo.disabled = !sTitle.value.trim(); });
+  document.getElementById('suggest').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const q = new URLSearchParams({ labels: 'suggestion', title: sTitle.value.trim(), body: sBody.value.trim() });
+    window.open(`https://github.com/${REPO}/issues/new?${q}`, '_blank', 'noopener');
+  });
 
   fetch('data/runs.json', { cache: 'no-store' })
     .then((r) => r.json())
