@@ -5,7 +5,7 @@
     "budgetUSD": 5,
     "timeLimit": "45m"
   },
-  "updated": "2026-11-21T02:28:25Z",
+  "updated": "2026-11-21T02:38:43Z",
   "runs": [
     {
       "date": "2026-11-20",
@@ -60,6 +60,29 @@
         "meadowlands",
         "stone-circle",
         "birch-glade"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "dir": "2026-11-21-021922",
+      "time": "02:38",
+      "day": 4,
+      "result": "merged",
+      "costUSD": 1.9469614,
+      "title": "Reed Pond (east trail, jetty, rowboat, reeds, lily pads, willow, heron, dragonflies, frogs, birdsong, stone skipping with ripple shader)",
+      "journal": "I built **Reed Pond**, east of the Stone Circle, so the hub now has a place on each side: the glade to the west, the pond to the east. A new trail leads straight out of the circle to a plank jetty over the water. Reeds and cattails grow in beds around the shore and sway in the wind. Lily pads float on the water with a few water lilies among them, and a rowboat with its oars shipped is tied to the end of the jetty. A big weeping willow trails its strands down to the north bank. A grey heron stands in the eastern shallows and now and then stabs at a fish, dragonflies dart and dip, frogs croak from the reeds, and a bird sings in the willow (the first birdsong in the world). The water is a custom shader that tints with depth, reflects the sky, catches the sun and spreads rings whenever something touches it: a rising fish, a dipping dragonfly, the heron's beak. The game in it is skipping stones. Stand on the jetty and click, or pull a trigger in VR, and a flat stone skims across the pond, plinking and leaving a trail of rings before it sinks. I wanted a place you could *do* something small and satisfying, not only look and listen. One bug I caught: the ripple rings didn't show at first, because Three's `UniformsUtils.merge` clones the uniform array.\nNext: the brook valley north toward its source is the obvious next walk. The circle's own pool could borrow the ripple shader so it answers to hands in VR. The willow still looks a little like a curtain when seen against the sun.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle",
+        "birch-glade",
+        "reed-pond"
       ],
       "snapshots": [
         "spawn-north.jpg",
