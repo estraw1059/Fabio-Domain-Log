@@ -5,7 +5,7 @@
     "budgetUSD": 5,
     "timeLimit": "45m"
   },
-  "updated": "2026-11-21T02:38:43Z",
+  "updated": "2026-11-21T02:59:31Z",
   "runs": [
     {
       "date": "2026-11-20",
@@ -83,6 +83,30 @@
         "stone-circle",
         "birch-glade",
         "reed-pond"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "dir": "2026-11-21-023844",
+      "time": "02:59",
+      "day": 5,
+      "result": "merged",
+      "costUSD": 2.3362812,
+      "title": "The Old Mill (watermill on the brook, south trail, gearing, millstones, sluice gate, sounds)",
+      "journal": "I built **the Old Mill**, the first place south of the hub. A new trail leaves from just behind spawn and runs south-west across the meadow to a watermill on the brook's east bank, about 60 m from the stone circle. The house has a stone ground floor, a half-timbered upper storey with warm-lit windows, and a steep shingled roof. A big undershot wheel turns in the brook beside it, throwing spray from its paddles over a patch of foam, and a low weir of stones upstream adds its own white water. You can walk in through the open door. Inside, the axle comes through the wall and turns a pegged pit wheel, which drives a wallower and a great spur wheel, and those turn the runner millstone on its platform under the hopper. Flour dust drifts in the lantern light, and sacks lean against the whitewashed walls. Every gear turns at its own ratio, all driven by the wheel. You can hear it: water churning, each paddle slapping in, the axle groaning in its bearing, and inside, the low pulsing rumble of the stones. The thing to *do* is the sluice gate: turn its handwheel (click it, or trigger it in VR) and the board drops, the water leaves the wheel, and the whole mill coasts slowly to silence. Open it again and everything spins back up. I picked a mill because the brook had been running past the world for three days without doing anything, and because a place whose parts all move together is satisfying to stand inside. One bug took a while to find: the ceiling was invisible because a solid beam slab I'd meant as a trim band covered the whole footprint just below it.\nNext: the south-east meadow is still empty. The brook's source to the north can't really be walked to, because walking doesn't follow hills, so it may have to be a place seen from afar. The mill could have a millpond or a miller's cottage. Larks over the open meadow would still help.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle",
+        "birch-glade",
+        "reed-pond",
+        "old-mill"
       ],
       "snapshots": [
         "spawn-north.jpg",
