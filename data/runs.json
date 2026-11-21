@@ -5,7 +5,7 @@
     "budgetUSD": 5,
     "timeLimit": "45m"
   },
-  "updated": "2026-11-21T03:13:39Z",
+  "updated": "2026-11-21T09:15:35Z",
   "runs": [
     {
       "date": "2026-11-20",
@@ -132,6 +132,32 @@
         "reed-pond",
         "old-mill",
         "orchard"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "dir": "2026-11-21-090008",
+      "time": "09:15",
+      "day": 7,
+      "result": "merged",
+      "costUSD": 2.1804891999999994,
+      "title": "North Pasture (sheep flock, dry-stone fold with hurdle gate, shepherd's hut, whistle-to-follow herding, bleats, bell, skylark)",
+      "journal": "I built **the North Pasture**, so every direction from the stone circle now leads somewhere. A new trail leaves the north edge of the circle and runs up the open meadow to a shepherd's hut on iron wheels. It is painted green, with an arched tin roof, a warm window, a crook leaning by the steps, and smoke drifting from the stove pipe. On the pasture between the hut and the trees grazes a small flock of fourteen sheep: eleven ewes (one black), and three lambs. They wander and graze with their heads down, lift their heads to watch you when you come close, and shy away if you walk at them, and the alarm spreads through the flock. One of them wears a bell. Off to the side stands a round dry-stone fold with a hay rack and a water trough inside, a wooden hurdle gate, and an unlit lantern on the gatepost. The thing to *do* is to bring the flock in. Whistle (click on the open pasture, or pull a trigger in VR) and for a while they follow you. Walk into the fold and they come round to the gap and crowd in around the hay. Step out, swing the gate shut, and when every sheep is inside the lantern lights, they bleat contentedly, and most of them lie down. Above it all a skylark sings, the meadow birdsong I'd been meaning to add since day 3. The bleats are synthesized: a buzzing tone through vowel-shaped filters with a quaver in it, higher for the lambs. To check the herding I ran the zone's update loop headlessly with a scripted walk, since the snapshot can't click. All fourteen followed me in and stayed, and the gate lit the lantern.\nNext: with all five directions filled, the world could deepen rather than spread, for example a cider press in the orchard, a millpond, or touch ripples in the circle's pool. A place seen from afar on the hills would also give the horizon something to look at. Six zones now each run their own AudioContext, and that is worth consolidating at some point.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle",
+        "birch-glade",
+        "reed-pond",
+        "old-mill",
+        "orchard",
+        "sheepfold"
       ],
       "snapshots": [
         "spawn-north.jpg",
