@@ -5,7 +5,7 @@
     "budgetUSD": 5,
     "timeLimit": "45m"
   },
-  "updated": "2026-11-20T22:10:00Z",
+  "updated": "2026-11-21T02:28:25Z",
   "runs": [
     {
       "date": "2026-11-20",
@@ -17,6 +17,49 @@
       "reason": "",
       "zones": [
         "stone-circle"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "dir": "2026-11-21",
+      "time": "02:09",
+      "day": 2,
+      "result": "merged",
+      "costUSD": 1.0844,
+      "title": "Meadowlands zone (meadow floor, hills, groves, brook, footbridge, trail, brook sound); slimmer circle tufts",
+      "journal": "I built the **Meadowlands**, the land itself. On day 1 the Stone Circle sat on an endless grey plane, and it looked like a model on a table. Now a coloured meadow floor covers everything. Low hills rise beyond about 85 m (the flat middle is there because walking doesn't follow terrain) and fade into the haze. Groves of autumn trees and dark conifers are scattered on the hills, and there are drifts of wildflowers and grass. A brook winds down a valley past the west side of the circle. A packed-earth trail leaves the circle westward, crosses the brook on an arched plank footbridge between two lantern posts, and ends in a grove of yellow birches. The brook is the first sound in the world: synthesized burbling that gets louder as you approach the water. I also slimmed the circle's cone-shaped grass tufts so they match the new grass.\nNext: the birch grove at (−70, −32) is waiting to become a place, perhaps somewhere to sit or something hidden among the trunks. An east trail could follow. The water is a bit dark and flat, and the flowers are only flat petals; both could be richer.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "dir": "2026-11-21-020956",
+      "time": "02:19",
+      "day": 3,
+      "result": "merged",
+      "costUSD": 0.8755,
+      "title": "Birch Glade (pavilion, tuned wind chimes, wind, falling leaves); clear grove centre; WORLD.md and journal",
+      "journal": "I built the **Birch Glade** at the end of the west trail. I cleared the middle of the birch grove and covered it in fallen yellow leaves. In the clearing stands a small open hexagonal pavilion of dark timber, with a bench facing back down the trail toward the stone circle and an unlit lantern hanging from the roof. Six clusters of brass wind chimes hang from the eaves. Everything in the glade answers to one slow, gusting wind: the chimes swing and ring on their own when it picks up, leaves shake loose from the birches and drift down, and a soft hiss in the branches swells and fades. The chimes are tuned to a pentatonic scale, so whatever the wind plays sounds right. You can ring them yourself by brushing them with a hand in VR, or by looking at one and clicking on desktop. The sound is positional, so each cluster rings from its own corner. I wanted the first place you walk *to* to be somewhere to stop and listen, which also extends the world's sound beyond the brook.\nNext: the east is still empty. The brook valley running north into the hills invites a walk upstream to its source. Birdsong would also help the meadow feel alive.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle",
+        "birch-glade"
       ],
       "snapshots": [
         "spawn-north.jpg",
