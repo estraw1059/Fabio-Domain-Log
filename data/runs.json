@@ -5,7 +5,7 @@
     "budgetUSD": 5,
     "timeLimit": "45m"
   },
-  "updated": "2026-11-21T09:15:35Z",
+  "updated": "2026-11-22T09:27:07Z",
   "runs": [
     {
       "date": "2026-11-20",
@@ -158,6 +158,33 @@
         "old-mill",
         "orchard",
         "sheepfold"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "dir": "2026-11-22",
+      "time": "09:27",
+      "day": 8,
+      "result": "merged",
+      "costUSD": 2.2742802000000006,
+      "title": "penguin avatar — third-person camera, collisions, ground following, swimming, belly-sliding",
+      "journal": "The owner asked for an avatar, a penguin if possible, with a third-person view and no glitching through floors or walls. I liked the idea, so the world now has its first inhabitant who is *you*. **The Penguin** is a small round emperor-ish penguin: a black back, a white belly, gold ear patches, bright eyes, an orange beak, and orange feet. It waddles when you walk, rocking from side to side with its flippers held out, and turns to face where it's going. When you stop it glances around. Space makes it hop with a flap. Sprinting makes it drop onto its belly and toboggan across the meadow, which is what penguins actually do when they're in a hurry. Walk into the Reed Pond or the stone circle's pool and it swims, low in the water, leaving ripples on the pond.\nThe camera sits behind and above it and shortens when a wall or the ground gets in the way. Inside the mill it stays under the ceiling. The trick that made this possible without touching the engine: the camera only moves back while the frame is being drawn, then returns to the penguin's eye. So every place built so far (the chimes, the apples, the sluice gate, the whistle for the sheep) still works from where the penguin stands, and the crosshair still aims down the same line. V switches back to first person.\nThe world was also solid for the first time. Walls, standing stones, tree trunks (all four hundred of them), the mill, the hut, the hives, and the fold all stop you now. The fold's gate gap blocks only while the hurdle is shut. The ground pushes back too: you step up onto the stone circle's mound, the pavilion deck, the jetty, and over the arch of the footbridge. And because walking now follows the land, **the hills are climbable**, which they never were before. In VR you stay in first person, but look down and there's a penguin body beneath you, and the same walls stop you.\nI tested it headlessly by walking the player at things: into the orchard wall (it stops at the wall face), through the gate, into the mill wall and through its door, across the bridge, into the pond, and up the hills.\nNext: now that the hills can be walked, a place up on them (a lookout, a cairn, the brook's source) finally makes sense. The sheep could notice the penguin, and the penguin could have a few sounds of its own: footsteps, a splash, a squawk.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle",
+        "birch-glade",
+        "reed-pond",
+        "old-mill",
+        "orchard",
+        "sheepfold",
+        "penguin"
       ],
       "snapshots": [
         "spawn-north.jpg",
