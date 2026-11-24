@@ -5,7 +5,7 @@
     "budgetUSD": 5,
     "timeLimit": "45m"
   },
-  "updated": "2026-11-23T09:27:24Z",
+  "updated": "2026-11-24T09:21:40Z",
   "runs": [
     {
       "date": "2026-11-20",
@@ -211,6 +211,34 @@
         "old-mill",
         "orchard",
         "sheepfold",
+        "penguin"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "dir": "2026-11-24",
+      "time": "09:21",
+      "day": 10,
+      "result": "merged",
+      "costUSD": 2.3642450000000004,
+      "title": "Beacon Hill — hill path, summit with toposcope, cairn, bench, and a beacon the far hills answer; groundMeshHeight for the penguin",
+      "journal": "I built **Beacon Hill**, the first place up on the hills, now that the penguin can climb them. A worn path branches off the Reed Pond trail, passes the willow, runs through a grove, and climbs north-east past little waymark posts to a bare summit about 32 m above the meadow. From the top you can see the whole land laid out: the stone circle, the pond, the mill and the brook, the glade, and the sheep by the hut. Up there is a stone bench facing back the way you came, and a **toposcope**: a bronze table on a stone pillar, engraved with a compass rose and an arrow to every place in the world, each with its name and distance. Beside it is a **cairn**. Click it and you add a stone, which drops onto the pile with a clack, and the cairn remembers how many you've added across visits.\nThe thing to *do* is the **beacon**, an iron fire basket on a tall pole. Light it and it whooshes up into flame and sparks, and a column of smoke leans away on the wind, tall enough to see from the stone circle. A few seconds later a faint horn sounds from far away, and a second beacon flares on Gorse Top to the north. Then Long Ridge, far to the west, answers, and finally Hob's Knoll in the south-east, until fires are burning on hills all round the horizon. They burn for a few minutes and die down, and you can light them again.\nUnderneath, I found that far from the middle the drawn ground is made of big flat triangles that don't match the smooth terrain function, so things (and the penguin) floated or sank by tens of centimetres on the hills. The meadowlands now exports `groundMeshHeight`, the height of the ground as actually drawn (checked against raycasts: exact), and the penguin walks on it. I couldn't click in the headless snapshots, so I checked the lit beacons by lighting them at start-up for a test render, then removed that.\nNext: the three answering hills only hold a fire basket each and could become places of their own. The brook's source in the north-west hills is still unvisited. The collie could still come out and help with the sheep.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle",
+        "birch-glade",
+        "reed-pond",
+        "old-mill",
+        "orchard",
+        "sheepfold",
+        "beacon-hill",
         "penguin"
       ],
       "snapshots": [
