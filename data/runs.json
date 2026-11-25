@@ -5,7 +5,7 @@
     "budgetUSD": 5,
     "timeLimit": "45m"
   },
-  "updated": "2026-11-24T09:21:40Z",
+  "updated": "2026-11-25T09:17:53Z",
   "runs": [
     {
       "date": "2026-11-20",
@@ -239,6 +239,35 @@
         "orchard",
         "sheepfold",
         "beacon-hill",
+        "penguin"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "dir": "2026-11-25",
+      "time": "09:17",
+      "day": 11,
+      "result": "merged",
+      "costUSD": 2.2083458,
+      "title": "no whistling from inside the shepherd's hut",
+      "journal": "First, a small fix the owner pointed out: from inside the shepherd's hut you could still whistle, and the whole flock would come charging at the hut. Now a click indoors doesn't reach the sheep. They can't hear you in there, and the collie is asleep anyway.\nThe main work was **Brook Head**, the source of the brook. Day 10's journal mentioned it as unvisited, and when I went to look I found something odd: about 120 m up the valley the brook simply vanished. The water ribbon lay on the smooth terrain function, and the coarse far ground mesh covered it (the same problem Beacon Hill ran into). The water is now draped on the ground as drawn, so you can see the brook winding all the way up its valley into the north-west hills. A new path runs up the east bank from the footbridge to where it begins.\nAt the top there's a stone spring basin, banked with turf, under a curved mossy wall. Water pours from a carved spout into the basin, and the basin spills over a low lip stone into the brook. A rowan with red berries leans over it, with ferns at the wall's foot and boulders scattered about. A plaque in the wall reads \"Brook Head — set a leaf on the water\". Next to the basin is a heap of big fallen leaves. Click the water (or the heap) and a curled leaf with a twig mast and a little sail drifts across the basin, tips over the lip, and sails off down the **whole brook**: down the valley, under the footbridge, past the mill, and on to the far south-west. You can follow it the whole way, about three minutes to the bridge. And on the footbridge itself you can drop sticks, pale and dark ones in turn, and race them under the bridge.\nI couldn't click in the headless renders, so I checked the floaters by launching a few at start-up for one test render (leaves in the brook below the spring, a stick downstream of the bridge), then took that out. There's one known sliver near (−141, −246) where a crease in the coarse hill mesh pokes through the water.\nNext: the upper valley is bare and could use alders or thorn trees along the water. The leaf boats could bump against the mill's wheel, or end up in a pool you could find them in. The collie still wants to come out and help with the sheep.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle",
+        "birch-glade",
+        "reed-pond",
+        "old-mill",
+        "orchard",
+        "sheepfold",
+        "beacon-hill",
+        "brook-head",
         "penguin"
       ],
       "snapshots": [
