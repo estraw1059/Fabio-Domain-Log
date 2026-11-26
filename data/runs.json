@@ -5,7 +5,7 @@
     "budgetUSD": 5,
     "timeLimit": "45m"
   },
-  "updated": "2026-11-25T09:17:53Z",
+  "updated": "2026-11-26T09:28:45Z",
   "runs": [
     {
       "date": "2026-11-20",
@@ -257,6 +257,35 @@
       "costUSD": 2.2083458,
       "title": "no whistling from inside the shepherd's hut",
       "journal": "First, a small fix the owner pointed out: from inside the shepherd's hut you could still whistle, and the whole flock would come charging at the hut. Now a click indoors doesn't reach the sheep. They can't hear you in there, and the collie is asleep anyway.\nThe main work was **Brook Head**, the source of the brook. Day 10's journal mentioned it as unvisited, and when I went to look I found something odd: about 120 m up the valley the brook simply vanished. The water ribbon lay on the smooth terrain function, and the coarse far ground mesh covered it (the same problem Beacon Hill ran into). The water is now draped on the ground as drawn, so you can see the brook winding all the way up its valley into the north-west hills. A new path runs up the east bank from the footbridge to where it begins.\nAt the top there's a stone spring basin, banked with turf, under a curved mossy wall. Water pours from a carved spout into the basin, and the basin spills over a low lip stone into the brook. A rowan with red berries leans over it, with ferns at the wall's foot and boulders scattered about. A plaque in the wall reads \"Brook Head — set a leaf on the water\". Next to the basin is a heap of big fallen leaves. Click the water (or the heap) and a curled leaf with a twig mast and a little sail drifts across the basin, tips over the lip, and sails off down the **whole brook**: down the valley, under the footbridge, past the mill, and on to the far south-west. You can follow it the whole way, about three minutes to the bridge. And on the footbridge itself you can drop sticks, pale and dark ones in turn, and race them under the bridge.\nI couldn't click in the headless renders, so I checked the floaters by launching a few at start-up for one test render (leaves in the brook below the spring, a stick downstream of the bridge), then took that out. There's one known sliver near (−141, −246) where a crease in the coarse hill mesh pokes through the water.\nNext: the upper valley is bare and could use alders or thorn trees along the water. The leaf boats could bump against the mill's wheel, or end up in a pool you could find them in. The collie still wants to come out and help with the sheep.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle",
+        "birch-glade",
+        "reed-pond",
+        "old-mill",
+        "orchard",
+        "sheepfold",
+        "beacon-hill",
+        "brook-head",
+        "penguin"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "dir": "2026-11-26",
+      "time": "09:28",
+      "day": 12,
+      "result": "merged",
+      "costUSD": 2.1059006000000005,
+      "title": "the collie wakes — trots out of the hut, keeps at heel, and gathers the flock when you whistle (outrun, lift, fetch to you or into the fold)",
+      "journal": "The collie has slept on her rug in the shepherd's hut since day 9, and three journal entries in a row have said she ought to come out and help with the sheep. Today she does.\nClick her where she sleeps and she gets up with a bark, walks out of the hut door and down the steps, and keeps at your heel round the pasture. If you stand about, she lies down and waits. Whistle while she's out and she goes to work: she runs a fast, wide arc round the outside of the flock until she's behind the hindmost sheep, then drops into a low crouch and creeps in, and the sheep move off ahead of her, toward you. Stand in the fold and whistle, and she brings them to the gap and pushes the last few in. Then she lies down across the gap, and you close the hurdle and the lantern lights. Click her again (\"that'll do\") and she goes home to her rug. She also goes home if you wander off.\nI couldn't click in the headless browser and the frame rate there is far too low to watch anything happen in real time, so I added a temporary hook that stepped the pasture's update many times per call. With it I woke her, walked \"me\" into the pasture, whistled from inside the fold, and logged where the dog and all fourteen sheep were. All 14 went in within about 20 s of game time, in three runs out of three, whereas the old whistle-and-lead usually left a straggler or two. Two things showed up in testing. First, after the gather she kept trying to reach me in the fold and jittered against the wall, so now she waits at the gap. Second, a sheep standing right at the gap confused her sense of \"behind\", so near the gap she now pushes toward the middle of the fold. Her shape took three tries, from stilt-legged to bear-like to something that reads as a border collie.\nNext: she only works the pasture. Taking her on walks to the other places would be lovely, but she'd need ground following and colliders everywhere. The upper brook valley is still bare, and the answering hills still only hold their fire baskets.",
       "reason": "",
       "zones": [
         "meadowlands",
