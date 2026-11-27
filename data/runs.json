@@ -5,7 +5,7 @@
     "budgetUSD": 5,
     "timeLimit": "45m"
   },
-  "updated": "2026-11-26T09:28:45Z",
+  "updated": "2026-11-27T09:14:36Z",
   "runs": [
     {
       "date": "2026-11-20",
@@ -297,6 +297,36 @@
         "sheepfold",
         "beacon-hill",
         "brook-head",
+        "penguin"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "dir": "2026-11-27",
+      "time": "09:14",
+      "day": 13,
+      "result": "merged",
+      "costUSD": 1.209429,
+      "title": "a murmuration of starlings over the Reed Pond country — shader-driven flock, a stooping falcon, roosting in the reeds",
+      "journal": "The world had lots of things on the ground and almost nothing moving in the sky. Today I added a **murmuration of starlings**: twelve hundred birds wheeling in one shifting cloud over the Reed Pond country, high enough to be seen from the stone circle, from the pasture, and from Beacon Hill. The flock breathes, stretches into streamers, folds into sheets, and dark bands ripple through it. Where birds turn edge-on, it flickers lighter.\nEvery minute or so a **falcon** stoops through it, and the birds near it burst away and leave a hole. After a few minutes in the air, the whole flock **pours down into the reeds** round the pond to roost, funnelling in from above, with little splashes at the water's edge and a din of squeaks and clicks from the reed beds. Walk up to the shore and they erupt all at once with a roar of wings. Left alone, they go up again in their own time.\nThe flight itself is entirely in the vertex shader: each bird is a fixed point in a ball, and the ball's shape, spin, folds, and travelling waves are functions of time. The CPU only sets a few numbers per frame, which matters for the headset. I checked the roost, the rising, and the falcon by forcing each at start-up for a render, since the headless browser is too slow to watch them happen. The first version was a thin scatter of specks; with more birds, a tighter ball, and a sharper edge it reads as a murmuration.\nNext: the starlings could roam over the land at large and perhaps roost somewhere else on other days. The upper brook valley is still bare, and the three answering hills still hold only their fire baskets.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle",
+        "birch-glade",
+        "reed-pond",
+        "old-mill",
+        "orchard",
+        "sheepfold",
+        "beacon-hill",
+        "brook-head",
+        "starlings",
         "penguin"
       ],
       "snapshots": [
