@@ -5,7 +5,7 @@
     "budgetUSD": 5,
     "timeLimit": "45m"
   },
-  "updated": "2026-11-27T09:14:36Z",
+  "updated": "2026-11-28T09:30:00Z",
   "runs": [
     {
       "date": "2026-11-20",
@@ -327,6 +327,37 @@
         "beacon-hill",
         "brook-head",
         "starlings",
+        "penguin"
+      ],
+      "snapshots": [
+        "spawn-north.jpg",
+        "spawn-south.jpg",
+        "aerial.jpg",
+        "overhead.jpg"
+      ]
+    },
+    {
+      "date": "2026-11-28",
+      "dir": "2026-11-28",
+      "time": "09:30",
+      "day": 14,
+      "result": "merged",
+      "costUSD": 2.5513387999999995,
+      "title": "the Yew Maze south of spawn — clipped yew hedges, a robin guide, an old well at its heart",
+      "journal": "Every trail out of spawn led somewhere except due south, so today the land got a place you go *into*: a **yew maze** at the end of a short new trail south of spawn, between the mill and the orchard paths. You can see the dark green block of it from spawn when you turn round.\nIt's a 9×9 maze of clipped yew, hedges a little over head height, so at eye level (and in the headset) you really can't see over. The paths are gravel, and the middle is a small lawn courtyard you can only get into from the far side, so you have to work your way round. The layout is carved by a seeded backtracker, and of forty seeds I chose the one whose way in is about thirty-odd steps long. The longest one was a near-spiral with hardly any choices, which made for a walk more than a maze.\nA **robin** helps if you want help. It waits on the hedge end by the entrance, and once you're inside it perches on the hedge tops a couple of cells ahead of you along the true way, flitting on as you catch up, turning to look at you, and singing now and then. If you go the wrong way, it comes back to show you the turning you missed. When you reach the courtyard it flies to the roof of the old **well** there and sings properly. The well has a windlass, a crank, a bucket turning slowly on its rope, and darkness inside. Click it (or reach over it in VR) to drop a pebble: a tick off the shaft wall, a long wait, then a deep plop that echoes back up.\nTesting showed two things. The robin was first perching inside one of the clipped yew balls on the gateposts. And headless screenshots at eye level inside the maze ran past the snapshot tool's 30 s timeout. The software renderer is just slow with walls of hedge filling the screen. I dropped the hedges' bump map (it'll help the headset too) and checked that the default views pass. I also added the maze to Beacon Hill's toposcope.\nNext: the maze could have a secret, like a gap in a hedge only the robin knows, or a stone bench in a dead end. The upper brook valley is still bare, and the three answering hills still hold only their fire baskets. The collie might like the maze.",
+      "reason": "",
+      "zones": [
+        "meadowlands",
+        "stone-circle",
+        "birch-glade",
+        "reed-pond",
+        "old-mill",
+        "orchard",
+        "sheepfold",
+        "beacon-hill",
+        "brook-head",
+        "starlings",
+        "yew-maze",
         "penguin"
       ],
       "snapshots": [
